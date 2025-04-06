@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 616015552
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1914da17c8e887b8af6c874fd694cb2c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55d48f4ad9c3b13330b9eb5ee5686477
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Modules/Portrait/Shaders/MobileParticlesAddScroll.shader
+- Assets/Modules/Portrait/Shaders/Fx_noise.shader
+- Assets/Modules/Portrait/Shaders/Fx_dissolve.shader
+- Assets/Modules/Portrait/Shaders/MyMobile UV Sine_Add_Scroll.shader
+- Assets/Modules/Portrait/Shaders/eShaders/MyMobile UV Sine_Blend.shader
+- Assets/Modules/Portrait/Shaders/ParticlesAdditiveEffect.shader
+- Assets/Modules/Portrait/Shaders/FrontBlur.shader
+- Assets/Modules/Portrait/Shaders/eShaders/Additive.shader
+- Assets/Modules/Portrait/Shaders/eShaders/UVAni.shader
+- Assets/Modules/Portrait/Shaders/eShaders/MyMobile UV Sine_Add.shader
+- Assets/Modules/Portrait/Shaders/eShaders/additive_uv_dissolve_fresnel_distort.shader
+- Assets/Modules/Portrait/Shaders/UI-Gray.shader
+- Assets/Modules/Portrait/Shaders/eShaders/wh_effect.shader
+- Assets/Modules/Portrait/Shaders/eShaders/AlphaBlend.shader
+Dependencies: []

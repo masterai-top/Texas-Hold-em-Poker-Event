@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 218438484
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 35bd3d47904316131e83b00306b165f7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Modules/Portrait/Setting/Texture/UI/t_setting_rb.png
+Dependencies: []

@@ -1,0 +1,124 @@
+ManifestFileVersion: 0
+CRC: 3551512101
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d6cd799abfd1c8922a6f7b04e3a3973e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5a6869420b4870df390ae83da88d20c0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 709a1da0877662d40a64a89ed0055063, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 385b7d1277b6c4007a84c065696e0f8c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6b905c3220a89b74daa59e0675ecc3d5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 391f03b4fc35e124e8d97126268c49b1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 583aca5557847e14b9a1858b7b3a942d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bbcbd7952202d4d44a555aea5af2a351, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 34b81c56f370bae41b31b00d2ab375ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: daa72c27aa51c094ca98dccab65411bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce1f10776d31e6e45b81fedf956f5cd4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8c1e4df8f6242964282eef08c4f5bfdf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: baf8d7f948c888c45af61fc5a21551c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 97bc2ebab6563400c95b036136d26ea6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ac83c62bcf834f3439e0538fcde6a461, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3a2dfb3d0cea9f34686dc4c68181e8aa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e88aace192573840a8cf3968379b111, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9f0e995f494626a4f878eedbded37c8d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name_ready.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/UserInfo/p_user_edit_head.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_appeal.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_delete_account.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name_complete.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name_address_editor.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name_editor.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/UserInfo/p_user_edit.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/UserInfo/p_user_address.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_customer.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_verify_safe_pwd.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/UserInfo/p_user_connect.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name_other.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/UserInfo/p_user_address_editor.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_about.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name_notice.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_version.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_remark.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_setting_verify_delete.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/RealName/p_setting_real_name_editor_other.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/p_date.prefab
+- Assets/Modules/Portrait/Setting/Prefabs/UserInfo/p_user_edit_nick.prefab
+Dependencies:
+- E:/Jinbei/ipt/u3d client/u3d/Export/Windows/luascripts.unity3d
+- E:/Jinbei/ipt/u3d client/u3d/Export/Windows/common_prefabs.unity3d
+- E:/Jinbei/ipt/u3d client/u3d/Export/Windows/common_atlas.unity3d
+- E:/Jinbei/ipt/u3d client/u3d/Export/Windows/setting_atlas.unity3d
+- E:/Jinbei/ipt/u3d client/u3d/Export/Windows/setting_bg.unity3d

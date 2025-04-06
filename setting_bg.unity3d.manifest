@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1340785540
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: be7fbe00421d0d15c7df452f4c94b4f0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7859cd501ea75098bcf7e53f1b477c26
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Modules/Portrait/Setting/Texture/BG/bg_kefu.jpg
+Dependencies: []
