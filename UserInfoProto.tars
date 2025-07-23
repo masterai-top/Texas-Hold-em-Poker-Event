@@ -1,0 +1,208 @@
+/**
+**用户信息服务协议
+* 
+**/
+module userinfo
+{
+	struct UserInfo
+	{
+		0  require long    uid;            // 用户id
+	    1  require int     gender;         // 用户性别, 0 : 未知, 1 : 男, 2 : 女
+	    2  require string  nickname;       // 用户名称
+	    3  require string  head_str;       // 用户头像
+	    4  require string  signature;      // 签名
+		5  require long    reward_point;   // 奖励积分
+		6  require long    entry_point;	   // 参赛积分
+		7  require long    video_point;	   // 视频积分
+		8  require string  safe_pwd;	   // 安全密码
+		9  require string  telephone;      // 联系方式
+		10 optional int    level; 		   // 经验等级
+		11 optional int    experience;	   // 当前等级经验
+	};
+
+    // 获取用户基本信息
+	struct GetUserBasicReq
+	{
+	    0 require long uid;  //用户id
+	};
+
+	struct GetUserBasicResp
+	{
+		0 require int resultCode;  //结果码
+	    1 require UserInfo userinfo; //用户信息
+	};
+
+	// 更新用户信息
+	struct UpdateUserInfoReq
+	{
+		0 require long uid;
+		1 require map<string, string> updateInfo;//更细信息
+	};
+
+	struct UpdateUserInfoResp
+	{
+		0 require int resultCode;  //结果码
+		1 require UserInfo userinfo; //用户信息
+	};
+
+	struct PropsInfo
+	{
+		0 require string uuid;
+		1 require int propsID;
+		2 require int propsType;
+		3 require int iState; //状态 0: 未使用 1：使用 2：冻结
+		4 optional string getChannel;
+		5 optional long getTime;
+		6 optional long costTime;
+	};
+
+	struct ModifyUserPropsInfo
+	{
+		0 require long uid;
+		1 require int changeType;
+		2 require PropsInfo propsInfo;
+		3 require int propsCount;
+	    4 require string paraExt;//辅助参数
+	};
+
+	// 修改用户财富
+	struct ModifyUserPropsReq
+	{
+		0 require vector<ModifyUserPropsInfo> updateInfo;
+	};
+
+    struct ModifyUserPropsResp
+    {
+		0 require int resultCode;//结果码
+    };
+
+    //平台类型
+    enum E_Platform_Type
+    {
+        E_PLATFORM_TYPE_UNKNOWN = 0,  //未知
+        E_PLATFORM_TYPE_IOS = 1,      //ios
+        E_PLATFORM_TYPE_ANDROID = 2,  //android
+        E_PLATFORM_TYPE_H5 = 3,       //h5
+    };
+
+	//渠道号
+    enum E_Channel_ID
+    {
+        E_CHANNEL_ID_UNKNOWN = 0,   //未知
+        E_CHANNEL_ID_TEST = 1,      //测试渠道
+        E_CHANNEL_ID_PHONE = 2,
+		E_CHANNEL_ID_EMAIL = 3
+    };
+
+	enum E_Register_Type
+	//注册类型
+	{
+		E_REGISTER_TYPE_UNKNOWN 	= 0, //未知
+		E_REGISTER_TYPE_VISITOR 	= 1, //游客注册
+		E_REGISTER_TYPE_PHONE 		= 2, //手机注册
+		E_REGISTER_TYPE_EMAIL 		= 3, //邮箱注册
+	};
+
+	struct UserAccount
+	{
+		0 require long uid;
+		1 require string username;
+		2 require string password;
+		3 require int reg_type;
+		4 require string reg_time;
+		5 require string reg_ip;
+		6 require string reg_device_no;
+		7 require string device_id;
+		8 require string device_type;
+		9 require int platform;
+		10 require int channel_id;
+		11 require int area_id;
+		12 require int agcid;
+		13 require int province_code;
+		14 require int city_code;
+		15 require string realname;
+		16 require string idc_no;
+		17 require int idc_verify;
+		18 require int is_forbidden;
+		19 require string forbidden_time;
+		20 require string last_login_time;
+		21 require string last_logout_time;
+		22 optional string last_login_ip;
+		23 optional string last_login_address;
+		24 optional int is_ban_chat;
+	};
+
+	// 初始化账户请求
+	struct InitUserReq
+	{
+		0 require long uid;
+		1 require string userName;           //账号
+		2 optional string passwd;            //密码
+		3 optional string deviceID;          //设备唯一码（android: imei, ios: idfa）
+		4 optional string deviceType;        //机型信息
+		5 optional E_Platform_Type platform; //平台类型
+		6 optional E_Channel_ID channnelID;  //渠道号
+		7 optional int areaID;               //区域代码
+		8 optional int reg_type;             //注册类型：1-游客
+		9 optional string headUrl;           //头像
+		10 optional int gender;              //性别: 0-未知,1-男,2-女
+		11 optional string nickName;		 //昵称
+		12 optional string telephone;        //联系方式(客户填写的全账号名)
+	};
+
+	//初始化账户应答
+	struct InitUserResp
+	{
+		0 require int resultCode;  //结果码
+	};
+
+	// 获取用户账户 
+	struct GetUserAccountReq
+	{
+	    0 optional long uid; //用户ID
+	};
+
+	//
+	struct GetUserAccountResp
+	{   
+	    0  optional int resultCode;          //结果码
+		1  optional UserAccount useraccount; //账号信息
+	};
+
+	// 更新用户信息
+	struct UpdateUserAccountReq
+	{
+		0 require long uid;
+		1 require map<string, string> updateInfo;//更细信息
+	};
+
+	struct UpdateUserAccountResp
+	{
+		0 require int resultCode;  //结果码
+		1 require UserAccount useraccount; //用户信息
+	};
+
+	struct UserAddress
+	{
+		0 require long gid;           // 唯一ID
+		2 require long uid;           // 用户UID
+		3 require int status;         // 状态 0 正常 1 默认
+		4 require string nickname;    // 姓名
+		5 require string telephone;   // 电话
+		6 require string address;     // 地址详情
+	};
+
+	struct ListUserAddressResp
+	{
+		0 require vector<UserAddress> address;   // 列表
+	};
+
+	struct UserRemarkInfo
+	{
+		0  require long    uid;        // 用户id
+	    1  require string  nickname;   // 用户名称
+	    2  require string  head_str;   // 用户头像
+	    3  require string  content;    // 签名
+	};
+};
+

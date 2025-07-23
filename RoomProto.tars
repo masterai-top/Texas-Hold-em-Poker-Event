@@ -1,0 +1,111 @@
+#include "/home/tarsproto/XGame/Comm/Java2RoomProto.tars"
+
+/**
+**
+* 
+**/
+module room
+{
+	enum E_MTT_STATUS
+	{
+	    E_MTT_NONE      = 0,
+	    E_MTT_WAIT      = 1,   //等待
+	    E_MTT_SIGNUP    = 2,   //报名中
+	    E_MTT_DOING     = 3,   //比赛中
+	};
+
+	struct MemberInfo
+	{
+		0 require long uid;				//玩家id
+		1 require int memberType;		//成员类型  0：参赛  1：裁判
+		2 require long score;			//当前分数
+		3 require long updateTime;		//时间
+		4 require int iTableID;
+		5 require int iChairID;
+		6 optional int iRank;
+		7 optional string rewardInfo;
+		8 optional string roomIndex;
+	};
+
+   	struct MatchRoomInfo
+	{
+		0  require string roomIndex;			//房间唯一值
+		1  require string icon;       			//赛事图标
+	    2  require string roomKey;       		//房间号
+	    3  require string roomId;       		//房间服务ID
+	    4  require string roomName;       		//房间名字
+	    5  require string roomDesc;       		//房间简介
+	    6  require int gameType;				//玩法 0 德州  1 短牌  2 奥马哈
+	    7  require int matchType;      			//赛事类型 0:训练赛  1:主赛 2:边赛 3:教学赛 4:内部赛
+	    8  require int tableType;      			//牌桌类型 0 单桌赛  1: 多桌赛
+	    9  require int onlineGame;				//赛场类型 1 线上 0 线下
+	    10  require long beginTime;       		//开赛时间
+	    11 require int curPlayerCount;       	//当前人数
+	    12 require int maxPlayerCount;       	//最大报名数
+	    13 require int minPlayerCount;       	//最小报名数
+	    14 require int seatCount;				//座位数
+	    15 require long beginSignUpTime;       	//开始报名时间
+	    16 require long endSignUpTime;       	//截至报名时间
+	    17 require bool bDelaySignUp;       	//延迟报名
+	    18 require bool bRebuy;      			//Rebuy
+	    19 require bool bAddon;      			//Addon
+	    20 require E_MTT_STATUS gameStatus;  	//游戏状态
+	    21 require string rewardInfo;      		//奖励信息
+	    22 require long createTime;				//创建时间
+	    23 optional int rebuyCount;				//rebuy次数
+	    24 optional long baseScore;				//基础分
+	    25 optional string signUpFee;			//报名费
+	    26 optional string blindConf;			//盲注配置
+	    27 optional string rewardConf;			//盲注配置
+	    28 optional int iTag;					//标记
+	    29 optional vector<MemberInfo> vecMemberInfo;//成员信息
+	};
+
+	struct createMatchRoomReq
+	{
+		0 require string roomIndex;						//房间唯一值
+		1 require map<string, string> insertInfo;		//创房信息
+	};
+
+	struct createMatchRoomResp
+	{
+		0 require int resultCode;  				//结果码
+	};
+
+	struct updateMatchRoomReq
+	{
+		0 require string roomIndex;				//房间唯一值
+		1 require map<string, string> updateInfo;//
+	};
+
+	struct updateMatchRoomResp
+	{
+		0 require int resultCode;  				//结果码
+	};
+
+	struct selectMatchRoomListReq
+	{
+		0 require int onlineGame;		//
+		1 require vector<int> vecGameStatus;
+	};
+
+	struct selectMatchRoomListResp
+	{
+		0 require int resultCode;  				//结果码
+		1 require vector<MatchRoomInfo> vecMatchRoomInfo; //房间信息
+	};
+
+	struct updateRoomMemberReq
+	{
+		0 require string roomIndex;				//房间唯一值
+		1 require long uid;
+		2 require map<string, string> updateInfo;//
+	};
+
+	struct updateRoomMemberResp
+	{
+		0 require int resultCode;  				//结果码
+		1 require MemberInfo memberInfo;
+	};
+};
+
